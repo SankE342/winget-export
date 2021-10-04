@@ -1,0 +1,13 @@
+Autor: SankE
+
+Para exportar los paquetes, abrir el archivo packages_export.bat
+El programa se encargará de todo.
+
+REQUISITOS:
+- Python 3.8 o superior
+- Winget 1.1.12653 o superior
+
+Pueden descargar Python desde la Microsoft Store. Solo busquen Python y descarguen la versión más reciente.
+
+Pueden descargar winget desde github: https://github.com/microsoft/winget-cli/releases/tag/v1.1.12653
+Descargar y abrir el archivo 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
