@@ -21,3 +21,5 @@ Lastly, winget may not always install the latest version of a package. Sometimes
 (03-Oct-2021): Translating comments and such to english. Will upload files when done.
 
 (03-Oct-2021): Translation done. Testing program in preparation for first release.
+
+(04-Oct-2021): `RELEASE v1.0` - Temporary unpackaged release. Added `README.txt` for easier reading.
