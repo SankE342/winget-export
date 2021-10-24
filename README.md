@@ -25,3 +25,5 @@ Lastly, winget may not always install the latest version of a package. Sometimes
 (04-Oct-2021): `RELEASE v1.0` - Temporary unpackaged release. Added `README.txt` for easier reading.
 
 (13-Oct-2021): `RELEASE v2.0` - Source code packaged into a single executable file. Added more text prompts for higher clarity.
+
+(24-Oct-2021): Made some slight changes to make the python script easier to read.
