@@ -1,26 +1,24 @@
-# %%
-
 from os     import system
 from json   import loads
 
-# %%
+
 path = input('''
 Enter directory to save files to (Example: D:/Folder1/Folder2/)
 To use current directory, leave blank:
 '''
 )
-if (path == ''): path = './'
-elif (path[-1] != '/'): path += '/'
+
+if      path == ''      : path = './'
+elif    path[-1] != '/' : path += '/'
+
 file_name = 'winget_packages.json'   # JSON export of all packages
 exec_name = 'package_installer.bat'  # Batch output
 
-# %%
 
-print('Exporting list of installed programs as a JSON file')
+print('Exporting list of installed programs as a JSON file\n')
 system(f'winget export \"{path + file_name}\"')
 print()
 
-# %%
 
 print('Loading JSON file to Python and creating a list of packages')
 with open(path + file_name, 'r') as file_hdl:
@@ -32,7 +30,6 @@ packages_lst = [
 ]
 print()
 
-# %%
 
 # Building the Batch script
 print('Exported programs available through winget')
@@ -42,4 +39,9 @@ with open(path + exec_name, 'w') as exec_hdl:
         print(f'Package id: {package}')
 print()
 
-input(f'Task completed succesfully. To install the packages in the new PC/OS, transfer and run "{exec_name}"\nPress ENTER to finish')
+input(f'''
+Task completed succesfully
+To install the packages in the new PC/OS, transfer and run "{exec_name}"
+Press ENTER to finish
+''')
+
